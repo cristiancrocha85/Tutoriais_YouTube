@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regressiva p/ 2023</title>
+        <link rel="stylesheet" type="text/css" href="Css/style.css">
+    </head>
+    <body>
+        <div class="center">
+            <h1><span>17-05-23</span><br>Contagem Regressiva</h1>
+            <div id="clock"></div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script src="JavaScript/countdown.js"></script>
+        <script type="text/javascript">
+            $('#clock').countdown('2023/05/17',function(event){
+                var $this = $(this).html(event.strftime(''
+                +'<div><span>%w</span><span>Sem</span></div>'
+                +'<div><span>%d</span><span>Dias</span></div>'
+                +'<div><span>%H</span><span>Hrs</span></div>'
+                +'<div><span>%M</span><span>Min</span></div>'
+                +'<div><span>%S</span><span>Seg</span></div>'
+                ))
+            })
+        </script>
+    </body>
+</html>
